@@ -1,0 +1,19 @@
+.hdzaWe {
+    display: none !important;
+}
+
+.bzXtMb.M8OgIe.dRpWwb {
+    display: none !important;
+}
+
+div[role="listitem"]:has(a[href*="udm=50"]) {
+    display: none !important;
+}
+
+div[jsname="yEVEwb"]:has([jsname="cUzNTd"]) {
+    display: none !important;
+}
+
+.ULSxyf:has([jsname="N760b"]):not(:has([jsname="yEVEwb"])) {
+    display: none !important;
+}
