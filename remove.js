@@ -1,6 +1,8 @@
 const selectors = [
+    // .hdzaWe
+    `.bzXtMb.M8OgIe.dRpWwb:has(.hdzaWe)`,
     `.hdzaWe`,
-    `.bzXtMb.M8OgIe.dRpWwb`,
+
     `div[role="listitem"]:has(a[href*="udm=50"])`
 ]
 
