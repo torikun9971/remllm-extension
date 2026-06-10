@@ -9,12 +9,26 @@
     "host_permissions": [
         "<all_urls>"
     ],
-    "content_scripts": [{
-        "matches": ["https://*.google.com/search*"],
-        "css": ["hide.css"],
-        "js": ["remove.js"],
-        "run_at": "document_start"
-    }],
+    "content_scripts": [
+        {
+            "matches": ["https://*.google.com/", "https://*.google.com/?*"],
+            "css": ["google/hide.css"],
+            "js": ["google/remove.js"],
+            "run_at": "document_start"
+        },
+        {
+            "matches": ["https://*.google.com/search*"],
+            "css": ["google/search/hide.css"],
+            "js": ["google/search/remove.js"],
+            "run_at": "document_start"
+        },
+        {
+            "matches": ["https://mail.google.com/*"],
+            "css": ["google/mail/hide.css"],
+            "js": ["google/mail/remove.js"],
+            "run_at": "document_start"
+        }
+    ],
     "declarative_net_request": {
         "rule_resources": [{
             "id": "ruleset_1",
