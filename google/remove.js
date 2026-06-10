@@ -1,29 +1,32 @@
-const selectors = [
-    `button[jsname="B6rgad"]`
-]
+{
+    const selectors = [
+        `button[jsname="B6rgad"]`,
+        `div[jscontroller="xdV2Hc"]`
+    ]
 
-purgeLLMElements()
+    purgeLLMElements()
 
-document.addEventListener("DOMContentLoaded", purgeLLMElements)
-window.addEventListener("load", purgeLLMElements)
+    document.addEventListener("DOMContentLoaded", purgeLLMElements)
+    window.addEventListener("load", purgeLLMElements)
 
-document.addEventListener("readystatechange", () => {
-    if (!document.body) return
-    
-    let observer = new MutationObserver((mutations) => {
-        purgeLLMElements()
+    document.addEventListener("readystatechange", () => {
+        if (!document.body) return
+
+        let observer = new MutationObserver((mutations) => {
+            purgeLLMElements()
+        })
+
+        observer.observe(document.body, { childList : true })
     })
 
-    observer.observe(document.body, { childList : true })
-})
 
+    function purgeLLMElements() {
+        for (const selector of selectors) {
+            const elements = document.querySelectorAll(selector)
 
-function purgeLLMElements() {
-    for (const selector of selectors) {
-        const elements = document.querySelectorAll(selector)
-
-        for (const element of elements) {
-            element.remove()
+            for (const element of elements) {
+                element.remove()
+            }
         }
     }
 }
