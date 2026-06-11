@@ -17,3 +17,43 @@ div[jsname="yEVEwb"]:has([jsname="cUzNTd"]) {
 .ULSxyf:has([jsname="N760b"]):not(:has([jsname="yEVEwb"])) {
     display: none !important;
 }
+
+/* gemini */
+
+.MjjYud:not(.ULSxyf .MjjYud):has(a[href*="gemini.google"]) {
+    display: none !important;
+}
+
+div[id="taw"]:has(a[href*="gemini.google"]) {
+    display: none !important;
+}
+
+/* chatgpt */
+
+.MjjYud:not(.ULSxyf .MjjYud):has(a[href*="chatgpt.com"]) {
+    display: none !important;
+}
+
+div[id="taw"]:has(a[href*="chatgpt.com"]) {
+    display: none !important;
+}
+
+/* claude */
+
+.MjjYud:not(.ULSxyf .MjjYud):has(a[href*="claude.ai"]) {
+    display: none !important;
+}
+
+div[id="taw"]:has(a[href*="claude.ai"]) {
+    display: none !important;
+}
+
+/* grok */
+
+.MjjYud:not(.ULSxyf .MjjYud):has(a[href*="grok.com"]) {
+    display: none !important;
+}
+
+div[id="taw"]:has(a[href*="grok.com"]) {
+    display: none !important;
+}
