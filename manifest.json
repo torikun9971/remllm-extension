@@ -21,6 +21,12 @@
             "css": ["google/search/hide.css"],
             "js": ["google/search/remove.js"],
             "run_at": "document_start"
+        },
+        {
+            "matches": ["https://drive.google.com/*"],
+            "css": ["google/drive/hide.css"],
+            "js": ["google/drive/remove.js"],
+            "run_at": "document_start"
         }
     ],
     "declarative_net_request": {

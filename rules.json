@@ -43,5 +43,14 @@
             "urlFilter": "||google.com/search*udm=50",
             "resourceTypes": ["main_frame"]
         }
+    },
+    {
+        "id": 6,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "||drive.google.com/drive/*ai",
+            "resourceTypes": ["main_frame"]
+        }
     }
 ]
