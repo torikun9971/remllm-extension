@@ -4,7 +4,7 @@
         "priority": 1,
         "action": { "type": "block" },
         "condition": {
-            "urlFilter": "gemini.google.com",
+            "urlFilter": "||gemini.google.com",
             "resourceTypes": ["main_frame"]
         }
     },
