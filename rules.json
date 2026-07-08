@@ -52,5 +52,14 @@
             "urlFilter": "||drive.google.com/drive/*ai",
             "resourceTypes": ["main_frame"]
         }
+    },
+    {
+        "id": 7,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "||x.com/i/grok",
+            "resourceTypes": ["main_frame"]
+        }
     }
 ]

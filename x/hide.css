@@ -1,0 +1,7 @@
+a[href*="i/grok"] {
+    display: none !important;
+}
+
+.css-175oi2r.r-12vffkv:has(> * > * > button[aria-label="Grok"]) {
+    display: none; !important;
+}
